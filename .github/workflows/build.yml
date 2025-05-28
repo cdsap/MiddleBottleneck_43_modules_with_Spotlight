@@ -35,3 +35,8 @@ jobs:
               run: ./gradlew :layer_4:module_4_36:assembleDebug
               env:
                   DEVELOCITY_ACCESS_KEY: ${{ secrets.GE_TOKEN }}
+
+            - name: assembleDebug
+              run: ./gradlew assembleDebug
+              env:
+                  DEVELOCITY_ACCESS_KEY: ${{ secrets.GE_TOKEN }}
